@@ -168,13 +168,6 @@ main {
   gap: 2rem;
 }
 
-.grid-column {
-  display: flex;
-  flex-direction: column;
-}
-.grid-column > * + * {
-  margin-top: 2rem;
-}
 
 .product {
   border-radius: 0.25rem;
@@ -240,18 +233,7 @@ main {
   margin-top: 0.25rem;
 }
 
-.credits {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  margin-top: 10rem;
-  color: #777;
-  font-size: 0.875rem;
-}
-.credits a {
-  display: block;
-}
+
 
 @media all and (max-width: 600px) {
   .grid {

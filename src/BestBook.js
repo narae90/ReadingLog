@@ -12,7 +12,6 @@ function Detail(){
     return(
         <div className="responsive-container">
 		<div className="grid">
-			<div className="grid-column">
                 {
                     best.map((a,i)=>{
                         return <Best best={best[i]} i={i} key={i}/>
@@ -21,7 +20,6 @@ function Detail(){
 
 			</div>
 		</div>
-	</div>
     )
 }
 
