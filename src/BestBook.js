@@ -36,8 +36,11 @@ function Best(props){
                         <h2 className="product-title">{ props.best.title }</h2>
                         <p className="product-price">{ props.best.writer }</p>
                     </div>
-                    <button className="product-action">
-                    <i className="material-icons-outlined"></i></button>
+                    {/* <button className="product-action">
+                    <i className="material-icons-outlined"></i></button> */}
+
+
+                    
                 </div>
         </a>
 
