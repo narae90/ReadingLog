@@ -4,6 +4,9 @@ import './App.css';
 
 import BestData from './BestData';
 
+// 좋아요(heart)버튼 추가하기 
+// 좋아요 많은순으로 정렬?
+
 function Detail(){
 
     let history = useHistory();
