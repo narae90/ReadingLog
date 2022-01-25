@@ -107,13 +107,14 @@ a {
   transition: 0.15s ease;
   overflow: hidden;
 }
+
 .product:hover, .product:focus {
-  outline: none;
-  box-shadow: 0 0 0 0.25rem pink;
+  box-shadow: inset 0 0 0 0px rgb(0 0 0 / 15%);
+  content: "";
+  top: -4px;
+  position: relative;
 }
-.product:hover .product-content, .product:focus .product-content {
-  border-color: transparent;
-}
+
 
 .product-image {
   height: 400px;
@@ -166,10 +167,3 @@ a {
 
 
 
-/* BestCarousel */
-
-
-.Best-slide{
-  padding: 10px;
-
-}

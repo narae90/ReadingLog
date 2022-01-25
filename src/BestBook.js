@@ -41,6 +41,10 @@ function Best(props){
                     </div>
                     {/* <button className="product-action">
                     <i className="material-icons-outlined"></i></button> */}
+                    {/* 좋아요 기능  만들기 */}
+                    <div className="carousel-heart">
+                        <p>💚 1,403</p>
+                    </div>
 
 
                     

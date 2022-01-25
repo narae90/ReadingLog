@@ -2,8 +2,11 @@ import logo from './logo.svg';
 import React, {useState} from 'react';
 import { Nav, Navbar, Container, NavDropdown, Form, FormControl, Button } from 'react-bootstrap';
 import './App.css';
+
 import BestBook from './BestBook'
 import Bestcarousel from './Bestcarousel'
+import List from './List'
+
 import axios from 'axios';
 
 import { Link, Route, Switch } from 'react-router-dom';
@@ -50,6 +53,7 @@ function App() {
 <Route exact path="/">
 	{/* <BestBook /> */}
   <Bestcarousel />
+  <List />
 	
 </Route>
 

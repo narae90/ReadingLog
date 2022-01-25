@@ -1,0 +1,74 @@
+/* BestCarousel */
+
+
+.slick-slider{
+    height: 450px;
+}
+
+.Best-carousel{
+    padding: 30px 10px 10px 20px;
+    
+  
+  }
+
+
+  .Best-carousel{
+    border-radius: 0.25rem;
+    text-decoration: none;
+    font-weight: 400;
+    transition: 0.15s ease;
+    overflow: hidden;
+    
+  }
+
+  .Best-carousel:hover {
+    box-shadow: inset 0 0 0 0px rgb(0 0 0 / 15%);
+    content: "";
+    top: -4px;
+    position: relative;
+  }
+
+
+
+.carousel-image{
+    height: 300px;
+    border-radius: 0.25rem 0.25rem 0 0;
+    overflow: hidden;
+    
+  }
+
+
+.carousel-content{
+    padding: 1rem;
+    border-left: 1px solid #dedede;
+    border-right: 1px solid #dedede;
+    border-bottom: 1px solid #dedede;
+    border-radius: 0 0 0.25rem 0.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.15s ease;
+    background-color: #FFF;
+  }
+
+
+
+
+
+.carousel-title{
+    font-size: 20px;
+    padding: 3px;
+    padding-top: 10px;
+    padding-left: 15px;
+    text-align: left;
+}
+
+.carousel-author{
+    font-size: 15px;
+    padding: 3px;
+    font-weight: 400;
+    padding-left: 15px;
+    text-align: left;
+
+}
+
