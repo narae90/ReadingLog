@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import CommonTable from '../../component/table/CommonTable';
-import CommonTableColumn from '../../component/table/CommonTableColumn';
-import CommonTableRow from '../../component/table/CommonTableRow';
-import { postList } from '../../Data';
+
+
+import CommonTable from '../table/CommonTable';
+import CommonTableColumn from '../table/CommonTableColumn';
+import CommonTableRow from '../table/CommonTableRow';
+import { postList } from '../Data';
 
 const PostList = props => {
   const [ dataList, setDataList ] = useState([]);
@@ -34,4 +36,4 @@ const PostList = props => {
   )
 }
 
-export default PostList;s
+export default PostList;

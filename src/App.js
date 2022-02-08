@@ -7,6 +7,9 @@ import BestBook from './BestBook'
 import Bestcarousel from './Bestcarousel'
 import List from './List'
 
+import PostMain from './board/PostMain';
+import PostView from './board/PostView';
+
 import axios from 'axios';
 
 import { Link, Route, Switch } from 'react-router-dom';
@@ -62,7 +65,8 @@ function App() {
   <BestBook />
 </Route>
 
-
+<Route exact path='/postView/:no' component={PostView} />
+<Route exact path='/community' component={PostMain} />
 
 </Switch>
 
