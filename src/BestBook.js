@@ -11,6 +11,7 @@ function Detail(){
 
     let history = useHistory();
     let [best, best변경] = useState(BestData);
+    
 
     return(
         <div className="responsive-container">
@@ -27,6 +28,9 @@ function Detail(){
 }
 
 function Best(props){
+
+    let [하트, 하트변경] = useState(0);
+
     return(
 
         <a className="product">
@@ -41,9 +45,8 @@ function Best(props){
                     </div>
                     {/* <button className="product-action">
                     <i className="material-icons-outlined"></i></button> */}
-                    {/* 좋아요 기능  만들기 */}
                     <div className="carousel-heart">
-                        <p>💚 1,403</p>
+                    <span onClick={ ()=>{ 하트변경(하트+1) } }>❤️</span> { 하트 }
                     </div>
 
 

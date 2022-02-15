@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from 'react';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -12,6 +12,8 @@ import './Bestcarousel.css';
 
 
 function Bestcarousel(){
+
+  let [하트, 하트변경] = useState(0);
 
   var settings = {
     dots: true,
@@ -65,7 +67,7 @@ function Bestcarousel(){
                 </div>
                 {/* BestBook컴포넌트에서 데이터 가져오기 */}
                 <div className="carousel-heart">
-                  <p>💚 1,403</p>
+                <span onClick={ ()=>{ 하트변경(하트+1) } }>❤️</span> { 하트 }
                 </div>
               </div>
             </a>
@@ -83,7 +85,7 @@ function Bestcarousel(){
                     <p className="carousel-author">한창훈</p>
                 </div>
                 <div className="carousel-heart">
-                  <p>💚 3,211</p>
+                <span onClick={ ()=>{ 하트변경(하트+1) } }>❤️</span> { 하트 }
                 </div>
               </div>
             </a>
@@ -101,7 +103,7 @@ function Bestcarousel(){
                     <p className="carousel-author">린다 그래튼, 앤드루 스콧</p>
                 </div>
                 <div className="carousel-heart">
-                  <p>💚 2,243</p>
+                <span onClick={ ()=>{ 하트변경(하트+1) } }>❤️</span> { 하트 }
                 </div>
               </div>
             </a>
@@ -120,7 +122,7 @@ function Bestcarousel(){
                     <p className="carousel-author">윤희일</p>
                 </div>
                 <div className="carousel-heart">
-                  <p>💚 1,532</p>
+                <span onClick={ ()=>{ 하트변경(하트+1) } }>❤️</span> { 하트 }
                 </div>
               </div>
             </a>
@@ -138,7 +140,7 @@ function Bestcarousel(){
                     <p className="carousel-author">최명기</p>
                 </div>
                 <div className="carousel-heart">
-                  <p>💚 3,101</p>
+                <span onClick={ ()=>{ 하트변경(하트+1) } }>❤️</span> { 하트 }
                 </div>
               </div>
             </a>
@@ -156,7 +158,7 @@ function Bestcarousel(){
                     <p className="carousel-author">김헌진</p>
                 </div>
                 <div className="carousel-heart">
-                  <p>💚 1,403</p>
+                <span onClick={ ()=>{ 하트변경(하트+1) } }>❤️</span> { 하트 }
                 </div>
               </div>
             </a>
@@ -172,7 +174,7 @@ function Bestcarousel(){
                     <p className="carousel-author">뤄후이전</p>
                 </div>
                 <div className="carousel-heart">
-                  <p>💚 1,403</p>
+                <span onClick={ ()=>{ 하트변경(하트+1) } }>❤️</span> { 하트 }
                 </div>
               </div>
             </a>
@@ -188,7 +190,7 @@ function Bestcarousel(){
                     <p className="carousel-author">마이클 맥거</p>
                 </div>
                 <div className="carousel-heart">
-                  <p>💚 1,403</p>
+                <span onClick={ ()=>{ 하트변경(하트+1) } }>❤️</span> { 하트 }
                 </div>
               </div>
             </a>
