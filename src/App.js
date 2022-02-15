@@ -6,6 +6,7 @@ import './App.css';
 import BestBook from './BestBook'
 import Bestcarousel from './Bestcarousel'
 import List from './List'
+import Login from './login/Login'
 
 import PostMain from './board/PostMain';
 import PostView from './board/PostView';
@@ -32,12 +33,12 @@ function App() {
             </NavDropdown>
             <Nav.Link href="/community">커뮤니티</Nav.Link>
             <Nav.Link href="/bestbook">도서 투표</Nav.Link>
-            <Nav.Link href="/new">신간 도서</Nav.Link>
-            <Nav.Link href="/recommend">추천 도서</Nav.Link>
+            {/* <Nav.Link href="/new">신간 도서</Nav.Link>
+            <Nav.Link href="/recommend">추천 도서</Nav.Link> */}
 
           </Nav>
           <Nav>
-            <Nav.Link href="/">로그인</Nav.Link>
+            <Nav.Link href="/Login">로그인</Nav.Link>
             <Nav.Link eventKey={2} href="#memes">
               마이페이지
             </Nav.Link>
@@ -64,6 +65,10 @@ function App() {
 <Route path="/bestbook">
   <BestBook />
 </Route>
+
+<Route exact path="/Login" component={Login} />
+
+
 
 <Route exact path='/postView/:no' component={PostView} />
 <Route exact path='/community' component={PostMain} />
