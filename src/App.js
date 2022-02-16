@@ -62,13 +62,9 @@ function App() {
 </Route>
 
 
-<Route path="/bestbook">
-  <BestBook />
-</Route>
 
-<Route exact path="/Login" component={Login} />
-
-
+<Route path="/bestbook" component={BestBook} />
+<Route path="/Login" component={Login} />
 
 <Route exact path='/postView/:no' component={PostView} />
 <Route exact path='/community' component={PostMain} />

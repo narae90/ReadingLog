@@ -13,7 +13,7 @@ const PostView = ({ history, location, match }) => {
 
   return (
     <>
-      <h2 align="center">게시글 상세정보</h2>
+      <h1 align="center">게시글 상세정보</h1>
 
       <div className="post-view-wrapper">
         {

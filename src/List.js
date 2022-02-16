@@ -1,10 +1,16 @@
 
 import React, {useState} from 'react';
+import { useHistory, useParams } from 'react-router-dom';
 import { ListGroup, Badge } from 'react-bootstrap';
 import './List.css';
 
 
+
 function List() {
+    
+    let history = useHistory();
+
+
     return (
 
     <div className="List">
@@ -14,11 +20,11 @@ function List() {
             className="d-flex justify-content-between align-items-start"
         >
             <div className="ms-2 me-auto">
-            <div className="fw-bold">도서 챌린지 일정안내</div>
+            <div className="fw-bold" onClick={ ()=>{history.pushState('/community')}}>도서 챌린지 일정안내</div>
             
             </div>
             <Badge className="badge" variant="primary" pill>
-            14
+            23
             </Badge>
         </ListGroup.Item>
         <ListGroup.Item
@@ -30,7 +36,7 @@ function List() {
 
             </div>
             <Badge variant="primary" pill>
-            14
+            10
             </Badge>
         </ListGroup.Item>
         <ListGroup.Item
@@ -41,7 +47,7 @@ function List() {
             <div className="fw-bold">북클럽 신청서 작성</div>
             </div>
             <Badge variant="primary" pill>
-            14
+            8
             </Badge>
         </ListGroup.Item>
         </ListGroup>
