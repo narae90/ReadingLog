@@ -7,6 +7,7 @@ import BestBook from './BestBook'
 import Bestcarousel from './Bestcarousel'
 import List from './List'
 import Login from './login/Login'
+import Mypage from './mypage/Mypage'
 
 import PostMain from './board/PostMain';
 import PostView from './board/PostView';
@@ -39,9 +40,9 @@ function App() {
           </Nav>
           <Nav>
             <Nav.Link href="/Login">로그인</Nav.Link>
-            <Nav.Link eventKey={2} href="#memes">
-              마이페이지
-            </Nav.Link>
+            <Nav.Link href="/mypage"> 마이페이지 </Nav.Link>
+            {/* <Nav.Link eventKey={2} href="mypage"> 마이페이지 </Nav.Link> */}
+            
           </Nav>
         </Navbar.Collapse>
         </Container>
@@ -49,25 +50,27 @@ function App() {
 
       
 
-	  <Switch>
 
 
 
 
-<Route exact path="/">
-	{/* <BestBook /> */}
-  <Bestcarousel />
-  <List />
-	
-</Route>
+<Switch>
+
+  <Route exact path="/">
+    {/* <BestBook /> */}
+    <Bestcarousel />
+    <List />
+    
+  </Route>
 
 
 
-<Route path="/bestbook" component={BestBook} />
-<Route path="/Login" component={Login} />
+  <Route path="/bestbook" component={BestBook} />
+  <Route path="/Login" component={Login} />
+  <Route path="/mypage" component={Mypage} />
 
-<Route exact path='/postView/:no' component={PostView} />
-<Route exact path='/community' component={PostMain} />
+  <Route exact path='/postView/:no' component={PostView} />
+  <Route exact path='/community' component={PostMain} />
 
 </Switch>
 

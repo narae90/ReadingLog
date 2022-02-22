@@ -20,7 +20,9 @@ function List() {
             className="d-flex justify-content-between align-items-start"
         >
             <div className="ms-2 me-auto">
-            <div className="fw-bold" onClick={ ()=>{history.pushState('/community')}}>도서 챌린지 일정안내</div>
+            <div className="fw-bold"onClick={ ()=>{history.push('/community')}}>
+                도서 챌린지 일정안내
+            </div>
             
             </div>
             <Badge className="badge" variant="primary" pill>
