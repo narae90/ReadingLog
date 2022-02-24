@@ -51,9 +51,6 @@ function App() {
       
 
 
-
-
-
 <Switch>
 
   <Route exact path="/">
@@ -62,6 +59,7 @@ function App() {
     <List />
     
   </Route>
+
 
 
 
@@ -76,6 +74,12 @@ function App() {
 
 
 
+  <div id='wrapper'>
+  <div>
+    content
+  </div>
+</div>
+<footer />
 
 
 

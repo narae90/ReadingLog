@@ -154,7 +154,7 @@ body {
   background: #c24f40;
 }
 
-footer {
+/* footer {
   position: fixed;
   width: 100%;
   bottom: 0;
@@ -165,4 +165,4 @@ footer {
 footer > a {
   color: rgb(83, 81, 81);
   font-weight: 700;
-}
+} */

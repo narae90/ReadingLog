@@ -149,6 +149,36 @@ a {
   margin-top: 0.25rem;
 }
 
+/* .main-footer{
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  padding: 20px 0;
+  text-align: center;
+  position : relative;
+  transform : translateY(-100%);
+
+  background-color: #DF7669;
+} */
+
+
+#wrapper{
+  height: auto;
+  min-height: 100%;
+  padding-bottom: 100px;
+  background-color: #DF7669;
+  margin-top: 50px;
+  color: white;
+
+  
+}
+footer{
+  height: 0;
+  position : relative;
+  transform : translateY(-100%);
+  
+}
 
 
 @media all and (max-width: 600px) {
