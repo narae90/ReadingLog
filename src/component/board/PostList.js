@@ -2,10 +2,11 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 
+
 import CommonTable from '../table/CommonTable';
 import CommonTableColumn from '../table/CommonTableColumn';
 import CommonTableRow from '../table/CommonTableRow';
-import { postList } from '../Data';
+import { postList } from '../../Data';
 
 const PostList = props => {
   const [ dataList, setDataList ] = useState([]);

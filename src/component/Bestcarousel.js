@@ -67,7 +67,7 @@ function Bestcarousel(){
                 </div>
                 {/* BestBook컴포넌트에서 데이터 가져오기 */}
                 <div className="carousel-heart">
-                <span onClick={ ()=>{ 하트변경(하트+1) } }>❤️</span> { 하트 }
+                <span onClick={ ()=>{ 하트변경(하트+1) } }>❤️{하트} </span> 
                 </div>
               </div>
             </a>
@@ -85,7 +85,7 @@ function Bestcarousel(){
                     <p className="carousel-author">한창훈</p>
                 </div>
                 <div className="carousel-heart">
-                <span onClick={ ()=>{ 하트변경(하트+1) } }>❤️</span> { 하트 }
+                <span onClick={ ()=>{ 하트변경(하트+1); } }>❤️</span> {하트}
                 </div>
               </div>
             </a>
