@@ -15,7 +15,9 @@ import PostView from './component/board/PostView';
 import axios from 'axios';
 
 import { Link, Route, Switch } from 'react-router-dom';
+
 import Header from './component/Header';
+import Footer from './component/Footer';
 
 
 function App() {
@@ -41,12 +43,7 @@ function App() {
       </Switch>
 
 
-  <div id='wrapper'>
-  <div>
-    content
-  </div>
-</div>
-<footer />
+      <Footer />
 
 
 
