@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import { useHistory } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './Mypage.css';
 
 import Grid from './Grid';
@@ -11,12 +12,17 @@ function Mypage () {
 
     
     return(
+
         <div>
             <h1>마이페이지</h1>
             <SideBar />
-            <Grid />
+
+            <Route path="/mypage">
+                <Grid />
+            </Route>
 
         </div>
+
     )
 
 }

@@ -4,6 +4,12 @@ h4{
     margin-bottom: 30px;
 }
 
+li{
+    list-style: none;
+
+    
+}
+
 .grid-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
