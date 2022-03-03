@@ -1,4 +1,4 @@
-import data from './data';
+import data from './data.json';
 
 
 function Log(){
@@ -8,9 +8,9 @@ function Log(){
             <table>
                 <tbody>
                     {data.map(data =>(
-                        <tr key={data.id}>
-                            <td>{data.title}</td>
-
+                        <tr key={data.log.id}>
+                            <td>{data.log.title}</td>
+                            <td>{data.log.content}</td>
                         </tr>
                     ))}
                 </tbody>

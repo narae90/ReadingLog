@@ -4,7 +4,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './Mypage.css';
 
 import Grid from './Grid';
-import SideBar from './SideBar';
+import SideBar from './Sidebar';
 
 
 
@@ -17,9 +17,8 @@ function Mypage () {
             <h1>마이페이지</h1>
             <SideBar />
 
-            <Route path="/mypage">
-                <Grid />
-            </Route>
+            <Grid />
+
 
         </div>
 

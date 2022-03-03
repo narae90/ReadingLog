@@ -1,0 +1,33 @@
+.sidebar {
+    
+    position: fixed;
+    width: 15%;
+    height: 100px;
+
+    background: #fabfbf;
+    font-size: 15px;
+}
+
+.nav {
+    position: relative;
+    margin: 0 15%;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: bold;
+  }
+
+
+.nav ul {
+    list-style: none;
+}
+
+/* a {
+    line-height: 5em;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.4em;
+    color: rgba(#FFF, 0.35);
+    display: block;
+    transition: all ease-out 300ms;
+  } */
