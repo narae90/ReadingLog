@@ -10,8 +10,8 @@ h4{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-left: 250px;
-    padding-right: 250px;
+    padding-left: 300px;
+    padding-right: 300px;
   }
   
   .card-mypage {
@@ -21,8 +21,8 @@ h4{
     justify-content: center;
     align-items: center;
     border-radius: 3px;
-    width: 21%;
-    height: 195px;
+    width: 30%;
+    height: 190px;
     margin: 15px 0 30px;
     box-shadow: 0 2px 15px 0px rgba(0, 0, 0, 0.2);
   }
@@ -52,17 +52,21 @@ h4{
   }
   
   .img-mypage {
-    background-color: pink;
+    background-color: #f8a79d;
     height: 50%;
     width: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
+    color: white;
+    font-weight: bold;
   }
-  .img-mypage img {
-    width: 160px;
-    height: 130px;
-  }
+  
+  /* .img-mypage img {
+    height: 100%;
+    width: 100%;
+
+  } */
   
   .product-name {
     font-family: "Lato", sans-serif;
@@ -89,4 +93,13 @@ h4{
     top: 15px;
     right: 15px;
     font-size: 19px;
+  }
+
+  @media (min-width: 1801px) and (max-width: 2649px) {
+    .grid-mypage {
+
+        padding-left: 400px;
+        padding-right: 400px;
+      }
+      
   }

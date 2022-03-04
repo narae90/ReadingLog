@@ -6,8 +6,8 @@ import './Sidebar.css';
 function SideBar(){
     return(
         <div>
-            <aside class="sidebar">
-                <nav class="nav">
+            <aside className="sidebar">
+                <nav className="nav">
                     <ul>
                         <li className="active"><a href="#">Welcome</a></li>
                         <li><a href="#">Who We Are</a></li>

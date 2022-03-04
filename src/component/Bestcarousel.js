@@ -51,13 +51,12 @@ function Bestcarousel(){
     return (
       
       <Slider {...settings}>
-        <a className="Best-carousel">
             {
               best.map((a,i)=>{
                 return <Carousel best={best[i]} i={i} key={i}/>
               })
             }
-        </a>
+
       </Slider>
     )
 }
@@ -67,21 +66,21 @@ function Carousel(props) {
   let [하트, 하트변경] = useState(0);
 
   return(
-    <>
-    <div className="carousel-image">
-    <img src={ props.best.img } 
-          width="100%" height="100%"/>
-    </div>
-    <div className="carousel-content">
-        <div className="carousel-info">
-          <h2 className="carousel-title">{ props.best.title }</h2>
-          <p className="carousel-price">{ props.best.writer }</p>
+    <a className="Best-carousel">
+      <div className="carousel-image">
+      <img src={ props.best.img } 
+            width="100%" height="100%"/>
       </div>
-      <div className="carousel-heart">
-      <span onClick={ ()=>{ 하트변경(하트+1); } }>❤️</span> {하트}
-      </div>
-    </div>   
-    </>
+      <div className="carousel-content">
+          <div className="carousel-info">
+            <h2 className="carousel-title">{ props.best.title }</h2>
+            <p className="carousel-price">{ props.best.writer }</p>
+        </div>
+        <div className="carousel-heart">
+        <span onClick={ ()=>{ 하트변경(하트+1); } }>❤️</span> {하트}
+        </div>
+      </div>   
+    </a>
   );
   
 }

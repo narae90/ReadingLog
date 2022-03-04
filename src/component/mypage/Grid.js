@@ -22,8 +22,8 @@ function Grid(props){
 
     return(
         <div className="card-mypage " key={data.id}>
-            <div className="img-mypage"></div>
-            <div className="product-name">{props.list.title}</div>
+            <div className="img-mypage">{props.list.title}</div>
+            <div className="product-name">{props.list.content}</div>
             <div className="overlay">
                 <div className="detail">
                     <span>Detail</span>
