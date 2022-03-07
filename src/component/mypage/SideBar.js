@@ -9,10 +9,10 @@ function SideBar(){
             <aside className="sidebar">
                 <nav className="nav">
                     <ul>
-                        <li className="active"><a href="#">Welcome</a></li>
-                        <li><a href="#">Who We Are</a></li>
-                        <li><a href="#">What We Do</a></li>
-                        <li><a href="#">Get In Touch</a></li>
+                        <li className="active"><a href="#">회원정보 변경</a></li>
+                        <li><a href="#">독서 기록장</a></li>
+                        <li><a href="#">스크랩 / 좋아요</a></li>
+                        <li><a href="#">내가 쓴 글 / 댓글</a></li>
                     </ul>
                 </nav>
             </aside>

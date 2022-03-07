@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import { useHistory } from 'react-router-dom';
 import '../App.css';
 
-import BestData from './BestData';
+import BestData from './DB/BestData';
 
 // 좋아요(heart)버튼 추가하기 
 // 좋아요 많은순으로 정렬?

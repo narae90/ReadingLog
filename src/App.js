@@ -9,8 +9,8 @@ import List from './component/List'
 import Login from './component/login/Login'
 import Mypage from './component/mypage/Mypage'
 
-import PostMain from './component/board/PostMain';
-import PostView from './component/board/PostView';
+import PostMain from './component/Post/PostMain';
+import PostView from './component/Post/PostView';
 
 import axios from 'axios';
 

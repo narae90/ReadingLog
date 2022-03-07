@@ -1,10 +1,11 @@
 .sidebar {
-
+    
     position: fixed;
     width: 15%;
     height: 500px;
     background: #fabfbf;
     font-size: 15px;
+    margin-left: 30px;
 
 }
 
@@ -15,6 +16,7 @@
     top: 50%;
     transform: translateY(-50%);
     font-weight: bold;
+
   }
 
 
