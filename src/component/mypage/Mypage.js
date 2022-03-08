@@ -16,8 +16,11 @@ function Mypage () {
         <div>
             <h1>마이페이지</h1>
             <SideBar />
-
             <Grid />
+
+\
+
+            
 
 
         </div>
