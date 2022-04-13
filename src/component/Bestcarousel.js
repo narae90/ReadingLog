@@ -7,92 +7,6 @@ import BestData from './DB/BestData';
 import styled from "styled-components";
 
 
-// styled-components 
-
-const StyledSlider = styled(Slider)`
-    .slick-slide {
-      padding: 10px;
-      @media (min-width: 1801px) and (max-width: 2649px) {
-        padding: 10px;
-      }
-    } 
-    
-    .slick-slider{
-      height: 450px;
-      @media (min-width: 1801px) and (max-width: 2649px) {
-        height: 570px;
-        
-      }
-    } 
-
-
-`
-
-const BestCarousel = styled.a`
-		border-radius: 0.25rem;
-    text-decoration: none;
-    font-weight: 400;
-    transition: 0.15s ease;
-    overflow: hidden;
-    &:hover{  
-      box-shadow: inset 0 0 0 0px rgb(0 0 0 / 15%);
-      content: "";
-      top: -4px;
-      position: relative;
-    }
-    
-    
-`
-
-const CarouselImage = styled.div`
-    height: 300px;
-    border-radius: 0.25rem 0.25rem 0 0;
-    overflow: hidden;
-    @media (min-width: 1801px) and (max-width: 2649px) {
-      height: 400px;
-      width: 455px;
-
-    }
-
-`
-
-const CarouselContent = styled.div `
-    padding: 1rem;
-    border-left: 1px solid #dedede;
-    border-right: 1px solid #dedede;
-    border-bottom: 1px solid #dedede;
-    border-radius: 0 0 0.25rem 0.25rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    transition: 0.15s ease;
-    background-color: #FFF;
-    text-align: center;
-    @media (min-width: 1801px) and (max-width: 2649px) {
-      width: 455px;
-    }
-
-`
-
-const CarouselTitle = styled.h2 `
-    padding: 3px;
-    padding-top: 10px;
-    padding-left: 15px;
-    text-align: left;
-    font-size: 18px;
-    font-weight: bold;
-
-`
-
-const CarouselWriter = styled.p`
-    font-size: 14px;
-    padding: 3px;
-    font-weight: 600;
-    padding-left: 15px;
-    text-align: left;
-`
-
-
 // 도서 투표 중에 좋아요(heart)를 많이 받은 8개 도서 보여주기
 
 
@@ -181,3 +95,91 @@ export default Bestcarousel;
 
 
 
+// styled-components 
+
+const StyledSlider = styled(Slider)`
+    .slick-slide {
+      padding: 10px;
+      
+      @media (min-width: 1801px) and (max-width: 2649px) {
+        padding: 10px;
+      }
+    } 
+    
+    .slick-slider{
+      height: 450px;
+
+      @media (min-width: 1801px) and (max-width: 2649px) {
+        height: 570px;
+        
+      }
+    } 
+
+
+`
+
+const BestCarousel = styled.a`
+		border-radius: 0.25rem;
+    text-decoration: none;
+    font-weight: 400;
+    transition: 0.15s ease;
+    overflow: hidden;
+    &:hover{  
+      box-shadow: inset 0 0 0 0px rgb(0 0 0 / 15%);
+      content: "";
+      top: -4px;
+      position: relative;
+    }
+    
+    
+`
+
+const CarouselImage = styled.div`
+    height: 300px;
+    border-radius: 0.25rem 0.25rem 0 0;
+    overflow: hidden;
+
+    @media (min-width: 1801px) and (max-width: 2649px) {
+      height: 400px;
+      width: 455px;
+
+    }
+
+`
+
+const CarouselContent = styled.div `
+    padding: 1rem;
+    border-left: 1px solid #dedede;
+    border-right: 1px solid #dedede;
+    border-bottom: 1px solid #dedede;
+    border-radius: 0 0 0.25rem 0.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.15s ease;
+    background-color: #FFF;
+    text-align: center;
+
+    @media (min-width: 1801px) and (max-width: 2649px) {
+      width: 455px;
+    }
+
+`
+
+const CarouselTitle = styled.h2 `
+    padding: 3px;
+    padding-top: 10px;
+    padding-left: 15px;
+    text-align: left;
+    font-size: 18px;
+    font-weight: bold;
+
+`
+
+const CarouselWriter = styled.p`
+    font-size: 14px;
+    padding: 3px;
+    font-weight: 600;
+    padding-left: 15px;
+    text-align: left;
+`

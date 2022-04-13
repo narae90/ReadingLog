@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
 import { useHistory } from 'react-router-dom';
-import '../App.css';
-
+import styled from "styled-components";
 import BestData from './DB/BestData';
+
 
 // 좋아요(heart)버튼 추가하기 
 // 좋아요 많은순으로 정렬?
@@ -14,16 +14,16 @@ function Detail(){
     
 
     return(
-        <div className="responsive-container">
-		<div className="grid">
+        <Container>
+		<Grid>
                 {
                     best.map((a,i)=>{
                         return <Best best={best[i]} i={i} key={i}/>
                     })
                 }
 
-			</div>
-		</div>
+			</Grid>
+		</Container>
     )
 }
 
@@ -33,16 +33,16 @@ function Best(props){
 
     return(
 
-        <a className="product">
-            <div className="product-image">
+        <Product>
+            <ProductImage>
                 <img src={ props.best.img } 
                     width="100%" height="100%"/>
-            </div>
-                <div className="product-content">
-                    <div className="product-info">
-                        <h2 className="product-title">{ props.best.title }</h2>
-                        <p className="product-price">{ props.best.writer }</p>
-                    </div>
+            </ProductImage>
+                <ProductContent>
+                    <ProductInfo>
+                        <ProductTitle>{ props.best.title }</ProductTitle>
+                        <ProductWriter>{ props.best.writer }</ProductWriter>
+                    </ProductInfo>
                     {/* <button className="product-action">
                     <i className="material-icons-outlined"></i></button> */}
                     <div className="carousel-heart">
@@ -51,11 +51,89 @@ function Best(props){
 
 
                     
-                </div>
-        </a>
+                </ProductContent>
+        </Product>
 
     );
 }
 
 
 export default Detail;
+
+
+
+const Container = styled.div`
+    margin-top: 20px;
+    max-width: 1080px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+`
+
+const Grid = styled.div`
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+
+    
+    @media all and (max-width: 600px) {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1.5rem;
+        }
+`
+
+const Product = styled.a`
+    border-radius: 0.25rem;
+    text-decoration: none;
+    font-weight: 400;
+    transition: 0.15s ease;
+    overflow: hidden;
+    &:hover{
+        box-shadow: inset 0 0 0 0px rgb(0 0 0 / 15%);
+        content: "";
+        top: -4px;
+        position: relative;
+    }
+`
+const ProductImage = styled.div`
+    height: 380px;
+    border-radius: 0.25rem 0.25rem 0 0;
+    overflow: hidden;
+
+`
+
+const ProductContent = styled.div`
+    padding: 1rem;
+    border-left: 1px solid #dedede;
+    border-right: 1px solid #dedede;
+    border-bottom: 1px solid #dedede;
+    border-radius: 0 0 0.25rem 0.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.15s ease;
+    background-color: #FFF;
+
+`
+
+const ProductInfo = styled.div`
+    display: flex;
+    flex-direction: column;
+
+`
+
+const ProductTitle = styled.h2`
+    font-size: 18px;
+    font-weight: bold;
+
+    text-align: left;
+
+`
+
+const ProductWriter = styled.p`
+    margin-top: 0.25rem;    
+    text-align: left;
+    font-size: 14px;
+    font-weight: 600;
+`
