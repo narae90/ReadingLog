@@ -18,7 +18,7 @@ function Mypage () {
             <SideBar />
             <Grid />
 
-\
+
 
             
 

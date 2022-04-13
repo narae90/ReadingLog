@@ -62,6 +62,9 @@ export default Detail;
 
 
 
+
+// styled-components
+
 const Container = styled.div`
     margin-top: 20px;
     max-width: 1080px;
