@@ -1,6 +1,26 @@
 import React, {useState} from 'react';
 import { useHistory } from 'react-router-dom';
 import './Login.css';
+import styled from "styled-components";
+
+
+const ContainerLogin = styled.div`
+	text-align: center;
+	color: rgb(80, 79, 79);
+	width: 50%;
+	align-items: center;
+	margin: auto;
+	margin-top: 80px;
+	header{
+		font-size: 1.3rem;
+		font-weight: 700;
+		margin: 0 auto 60px auto;
+		position: relative;
+		height: 25px;
+		width: 250px;
+		overflow: hidden;
+	}
+`
 
 
 
@@ -9,7 +29,7 @@ function Account () {
 	const [option, setOption] = useState(1);
 	
 	return (
-		<div className='container-login'>
+		<ContainerLogin>
 			<header>
 				<div className={'header-headings ' + (option === 1 ? 'sign-in' : (option === 2 ? 'sign-up' : 'forgot')) }>
 					<span>Sign in to your account</span>
@@ -24,7 +44,7 @@ function Account () {
 			</ul>
 			<Form option={option} />
 
-		</div>
+		</ContainerLogin>
 	)
 }
 

@@ -10,6 +10,11 @@ const GridPage = styled.div`
     justify-content: space-between;
     padding-left: 300px;
     padding-right: 300px;
+
+    @media (min-width: 1801px) and (max-width: 2649px) {
+        padding-left: 400px;
+        padding-right: 400px;
+    }
 `
 
 const CardPage = styled.div`
