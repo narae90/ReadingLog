@@ -8,7 +8,7 @@ import Bestcarousel from './component/Bestcarousel'
 import List from './component/List'
 import Login from './component/login/Login'
 import Mypage from './component/mypage/Mypage'
-
+import Todo from './component/mypage/Todo'
 import PostMain from './component/Post/PostMain';
 import PostView from './component/Post/PostView';
 
@@ -36,6 +36,8 @@ function App() {
         <Route path="/bestbook" component={BestBook} />
         <Route path="/Login" component={Login} />
         <Route path="/mypage" component={Mypage} />
+
+        <Route path="/todo" component={Todo} />
 
         <Route exact path='/postView/:no' component={PostView} />
         <Route exact path='/community' component={PostMain} />
