@@ -9,8 +9,8 @@ import List from './component/List'
 import Login from './component/login/Login'
 import Mypage from './component/mypage/Mypage'
 import Todo from './component/mypage/Todo'
-import PostMain from './component/Post/PostMain';
-import PostView from './component/Post/PostView';
+import DayMain from './component/Board/DayMain'
+import Day from './component/Board/Day'
 
 import axios from 'axios';
 
@@ -36,11 +36,11 @@ function App() {
         <Route path="/bestbook" component={BestBook} />
         <Route path="/Login" component={Login} />
         <Route path="/mypage" component={Mypage} />
-
+        <Route path="/board" component={DayMain} />
+        <Route path="/board/:board" component={Day} />
         <Route path="/todo" component={Todo} />
+        
 
-        <Route exact path='/postView/:no' component={PostView} />
-        <Route exact path='/community' component={PostMain} />
 
       </Switch>
 

@@ -113,7 +113,7 @@ function Grid(props){
             <CardName>{props.list.content}</CardName>
             <Overlay>
                 <CardDetail>
-                    <span>Detail</span>
+                    <span><a href="/todo">Detail</a></span>
                 </CardDetail>
             </Overlay>
         </CardPage>

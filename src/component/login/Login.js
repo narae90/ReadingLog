@@ -29,7 +29,7 @@ function Account () {
 	const [option, setOption] = useState(1);
 	
 	return (
-		<ContainerLogin>
+		<ContainerLogin> 
 			<header>
 				<div className={'header-headings ' + (option === 1 ? 'sign-in' : (option === 2 ? 'sign-up' : 'forgot')) }>
 					<span>Sign in to your account</span>
@@ -52,7 +52,7 @@ function Form ({ option }) {
     
 
 	return (
-		<form className='account-form' onSubmit={(evt) => evt.preventDefault()}>
+		<form className='account-form' onSubmit={(e) => e.preventDefault()}>
 			<div className={'account-form-fields ' + (option === 1 ? 'sign-in' : (option === 2 ? 'sign-up' : 'forgot')) }>
 				<input id='email' name='email' type='email' placeholder='E-mail' required />
 				<input id='password' name='password' type='password' placeholder='Password' required={option === 1 || option === 2 ? true : false} disabled={option === 3 ? true : false} />

@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
-import { useHistory } from 'react-router-dom';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+
 import './Mypage.css';
 
 import Grid from './Grid';

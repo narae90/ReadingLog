@@ -1,0 +1,47 @@
+{
+    "boards" : [
+        { "id" : 1, "title" : "2022년 05월 30일" },
+        { "id" : 2, "title" : "2022년 05월 30일"  },
+        { "id" : 3,  "title" : "2022년 05월 30일"  },
+        { "id" : 4,  "title" : "2022년 05월 30일"  }
+    ],
+    "words" : [
+        { 
+            "id" : 1,
+
+            "eng" : "제목을 이곳에 써봅니다.",
+            "kor" : "오늘은 2022년 05월 30일 월요일 오후 4:40분 입니다.",
+            "isDone" : false
+        },
+        {
+            "id" : 2,
+
+            "eng" : "book2",
+            "kor" : "책2",
+            "isDone" : false
+        },
+        {
+            "id" : 3,
+
+            "eng" : "book3",
+            "kor" : "책3",
+            "isDone" : false
+        },
+        {
+            "id" : 4,
+
+            "eng" : "book4",
+            "kor" : "책4",
+            "isDone" : false
+        },
+        {
+            "id" : 5,
+
+            "eng" : "book5",
+            "kor" : "책5",
+            "isDone" : false
+        }
+
+        
+    ]
+}

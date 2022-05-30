@@ -16,7 +16,7 @@ function Header() {
             <NavDropdown.Item href="/">Drama Log</NavDropdown.Item>
             <NavDropdown.Item href="/">Stock log</NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href="/community">커뮤니티</Nav.Link>
+            <Nav.Link href="/board">커뮤니티</Nav.Link>
             <Nav.Link href="/bestbook">도서 투표</Nav.Link>
             {/* <Nav.Link href="/new">신간 도서</Nav.Link>
             <Nav.Link href="/recommend">추천 도서</Nav.Link> */}
